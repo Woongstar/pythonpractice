@@ -19,7 +19,17 @@ def yesno():
     msgbox.askyesno("yes/no","해당 좌석은 역방향입니다.")
 def yesnocancel():
     response = msgbox.askyesnocancel(title=None,message="예매내역이 저장되지 않았습니다.")
-    p
+
+    if response ==1:
+        print("Yes")
+    elif response ==0:
+        print("Nope")
+    else:
+        print("Cancel")
+
+
+
+
 Button(root,command=info,text="Notice").pack()
 Button(root,command=warn,text="Warning").pack()
 Button(root,command=error,text="Error").pack()
